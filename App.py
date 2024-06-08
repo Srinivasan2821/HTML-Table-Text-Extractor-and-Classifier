@@ -37,12 +37,12 @@ def extract_column_with_highest_word_count(file_content):
         return None
 
 # Load the saved model
-model_path = r'C:\Users\elcot\Desktop\VS Code\Projects\Table Classification\best_model.pkl'
+model_path = 'best_model.pkl'
 with open(model_path, 'rb') as file:
     loaded_model = pickle.load(file)
 
 # Assuming the TF-IDF vectorizer was also saved
-vectorizer_path = r'C:\Users\elcot\Desktop\VS Code\Projects\Table Classification\tfidf_vectorizer.pkl'
+vectorizer_path = 'tfidf_vectorizer.pkl'
 with open(vectorizer_path, 'rb') as file:
     vectorizer = pickle.load(file)
 
